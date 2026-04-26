@@ -1,0 +1,245 @@
+{
+  "simulationConfig": {
+    "presetName": "Heavy Artemis-like Rocket",
+    "dt": 0.02,
+    "maxTime": 800,
+    "timeScale": 10,
+    "initialDownrange": 0,
+    "initialAltitude": 0,
+    "initialVelocity": 0,
+    "initialAngleDeg": 90,
+    "payloadMass": 15000,
+    "baseCd": 0.35,
+    "baseArea": 80,
+    "atmosphereEnabled": true,
+    "pitchStartTime": 8,
+    "pitchRateDegPerSec": 0.34,
+    "minPitchDeg": 6,
+    "integrator": "RK4",
+    "stages": [
+      {
+        "name": "Core Stage",
+        "dryMass": 85000,
+        "fuelMass": 400000,
+        "thrust": 7600000,
+        "massFlowRate": 2500,
+        "burnTime": 160,
+        "separationDelay": 2,
+        "cdMultiplier": 1,
+        "areaMultiplier": 1
+      },
+      {
+        "name": "Upper Stage",
+        "dryMass": 20000,
+        "fuelMass": 110000,
+        "thrust": 1000000,
+        "massFlowRate": 350,
+        "burnTime": 300,
+        "separationDelay": 1,
+        "cdMultiplier": 0.75,
+        "areaMultiplier": 0.75
+      }
+    ]
+  },
+  "presets": [
+    {
+      "presetName": "Small Educational Rocket",
+      "dt": 0.02,
+      "maxTime": 260,
+      "timeScale": 5,
+      "initialDownrange": 0,
+      "initialAltitude": 0,
+      "initialVelocity": 0,
+      "initialAngleDeg": 90,
+      "payloadMass": 200,
+      "baseCd": 0.42,
+      "baseArea": 1.8,
+      "atmosphereEnabled": true,
+      "pitchStartTime": 5,
+      "pitchRateDegPerSec": 0.7,
+      "minPitchDeg": 12,
+      "integrator": "RK4",
+      "stages": [
+        {
+          "name": "Educational Booster",
+          "dryMass": 800,
+          "fuelMass": 4200,
+          "thrust": 140000,
+          "massFlowRate": 55,
+          "burnTime": 75,
+          "separationDelay": 0,
+          "cdMultiplier": 1,
+          "areaMultiplier": 1
+        }
+      ]
+    },
+    {
+      "presetName": "Heavy Artemis-like Rocket",
+      "dt": 0.02,
+      "maxTime": 800,
+      "timeScale": 10,
+      "initialDownrange": 0,
+      "initialAltitude": 0,
+      "initialVelocity": 0,
+      "initialAngleDeg": 90,
+      "payloadMass": 15000,
+      "baseCd": 0.35,
+      "baseArea": 80,
+      "atmosphereEnabled": true,
+      "pitchStartTime": 8,
+      "pitchRateDegPerSec": 0.34,
+      "minPitchDeg": 6,
+      "integrator": "RK4",
+      "stages": [
+        {
+          "name": "Core Stage",
+          "dryMass": 85000,
+          "fuelMass": 400000,
+          "thrust": 7600000,
+          "massFlowRate": 2500,
+          "burnTime": 160,
+          "separationDelay": 2,
+          "cdMultiplier": 1,
+          "areaMultiplier": 1
+        },
+        {
+          "name": "Upper Stage",
+          "dryMass": 20000,
+          "fuelMass": 110000,
+          "thrust": 1000000,
+          "massFlowRate": 350,
+          "burnTime": 300,
+          "separationDelay": 1,
+          "cdMultiplier": 0.75,
+          "areaMultiplier": 0.75
+        }
+      ]
+    },
+    {
+      "presetName": "High Drag Test",
+      "dt": 0.02,
+      "maxTime": 800,
+      "timeScale": 8,
+      "initialDownrange": 0,
+      "initialAltitude": 0,
+      "initialVelocity": 0,
+      "initialAngleDeg": 90,
+      "payloadMass": 15000,
+      "baseCd": 1.2,
+      "baseArea": 150,
+      "atmosphereEnabled": true,
+      "pitchStartTime": 8,
+      "pitchRateDegPerSec": 0.2,
+      "minPitchDeg": 6,
+      "integrator": "RK4",
+      "stages": [
+        {
+          "name": "Core Stage",
+          "dryMass": 85000,
+          "fuelMass": 400000,
+          "thrust": 7600000,
+          "massFlowRate": 2500,
+          "burnTime": 160,
+          "separationDelay": 2,
+          "cdMultiplier": 1,
+          "areaMultiplier": 1
+        },
+        {
+          "name": "Upper Stage",
+          "dryMass": 20000,
+          "fuelMass": 110000,
+          "thrust": 1000000,
+          "massFlowRate": 350,
+          "burnTime": 300,
+          "separationDelay": 1,
+          "cdMultiplier": 0.75,
+          "areaMultiplier": 0.75
+        }
+      ]
+    },
+    {
+      "presetName": "No Atmosphere Test",
+      "dt": 0.02,
+      "maxTime": 800,
+      "timeScale": 20,
+      "initialDownrange": 0,
+      "initialAltitude": 0,
+      "initialVelocity": 0,
+      "initialAngleDeg": 90,
+      "payloadMass": 15000,
+      "baseCd": 0.35,
+      "baseArea": 80,
+      "atmosphereEnabled": false,
+      "pitchStartTime": 8,
+      "pitchRateDegPerSec": 0.34,
+      "minPitchDeg": 6,
+      "integrator": "RK4",
+      "stages": [
+        {
+          "name": "Core Stage",
+          "dryMass": 85000,
+          "fuelMass": 400000,
+          "thrust": 7600000,
+          "massFlowRate": 2500,
+          "burnTime": 160,
+          "separationDelay": 2,
+          "cdMultiplier": 1,
+          "areaMultiplier": 1
+        },
+        {
+          "name": "Upper Stage",
+          "dryMass": 20000,
+          "fuelMass": 110000,
+          "thrust": 1000000,
+          "massFlowRate": 350,
+          "burnTime": 300,
+          "separationDelay": 1,
+          "cdMultiplier": 0.75,
+          "areaMultiplier": 0.75
+        }
+      ]
+    },
+    {
+      "presetName": "Euler vs RK4 Test",
+      "dt": 0.08,
+      "maxTime": 500,
+      "timeScale": 10,
+      "initialDownrange": 0,
+      "initialAltitude": 0,
+      "initialVelocity": 0,
+      "initialAngleDeg": 90,
+      "payloadMass": 15000,
+      "baseCd": 0.35,
+      "baseArea": 80,
+      "atmosphereEnabled": true,
+      "pitchStartTime": 8,
+      "pitchRateDegPerSec": 0.34,
+      "minPitchDeg": 6,
+      "integrator": "Euler",
+      "stages": [
+        {
+          "name": "Core Stage",
+          "dryMass": 85000,
+          "fuelMass": 400000,
+          "thrust": 7600000,
+          "massFlowRate": 2500,
+          "burnTime": 160,
+          "separationDelay": 2,
+          "cdMultiplier": 1,
+          "areaMultiplier": 1
+        },
+        {
+          "name": "Upper Stage",
+          "dryMass": 20000,
+          "fuelMass": 110000,
+          "thrust": 1000000,
+          "massFlowRate": 350,
+          "burnTime": 300,
+          "separationDelay": 1,
+          "cdMultiplier": 0.75,
+          "areaMultiplier": 0.75
+        }
+      ]
+    }
+  ]
+}

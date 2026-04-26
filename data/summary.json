@@ -1,0 +1,75 @@
+{
+  "maxAltitude": 117264.796394,
+  "maxAltitudeTime": 285.5,
+  "maxVelocity": 4061.20116894,
+  "maxVelocityTime": 420.24,
+  "maxAcceleration": 341.354812382,
+  "maxQ": 423193.749901,
+  "maxQTime": 442.98,
+  "maxQAltitude": 20236.4737924,
+  "maxQVelocity": 2733.33204974,
+  "finalTime": 551.62,
+  "finalAltitude": 0,
+  "finalVelocity": 95.2991109954,
+  "escapeVelocityReached": false,
+  "stageEvents": [
+    {
+      "name": "Core Stage separation",
+      "stageIndex": 0,
+      "time": 160,
+      "x": 57454.1465011,
+      "altitude": 55938.7034705,
+      "velocity": 1624.7025105
+    },
+    {
+      "name": "Upper Stage separation",
+      "stageIndex": 1,
+      "time": 462,
+      "x": 806981.083542,
+      "altitude": 10971.7223084,
+      "velocity": 1045.83627142
+    }
+  ],
+  "simulationConfig": {
+    "presetName": "Heavy Artemis-like Rocket",
+    "dt": 0.02,
+    "maxTime": 800,
+    "timeScale": 10,
+    "initialDownrange": 0,
+    "initialAltitude": 0,
+    "initialVelocity": 0,
+    "initialAngleDeg": 90,
+    "payloadMass": 15000,
+    "baseCd": 0.35,
+    "baseArea": 80,
+    "atmosphereEnabled": true,
+    "pitchStartTime": 8,
+    "pitchRateDegPerSec": 0.34,
+    "minPitchDeg": 6,
+    "integrator": "RK4",
+    "stages": [
+      {
+        "name": "Core Stage",
+        "dryMass": 85000,
+        "fuelMass": 400000,
+        "thrust": 7.6e+06,
+        "massFlowRate": 2500,
+        "burnTime": 160,
+        "separationDelay": 2,
+        "cdMultiplier": 1,
+        "areaMultiplier": 1
+      },
+      {
+        "name": "Upper Stage",
+        "dryMass": 20000,
+        "fuelMass": 110000,
+        "thrust": 1e+06,
+        "massFlowRate": 350,
+        "burnTime": 300,
+        "separationDelay": 1,
+        "cdMultiplier": 0.75,
+        "areaMultiplier": 0.75
+      }
+    ]
+  }
+}
